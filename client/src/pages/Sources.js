@@ -3,8 +3,8 @@ export default function Sources(props) {
   const li = [
     [
       "CPSC 2600 Materials",
-      "https://www.mongodb.com/languages/mern-stack-tutorial",
-      "Mongodb connection and admin template. https://www.youtube.com/watch?v=5PaUiPyBDJY&t=796s",
+      "Mongodb connection and admin template. https://www.mongodb.com/languages/mern-stack-tutorial",
+      "https://www.youtube.com/watch?v=5PaUiPyBDJY&t=796s",
     ],
     ["https://dog.ceo/dog-api/"],
   ];
