@@ -4,6 +4,7 @@ export default function Sources(props) {
     [
       "CPSC 2600 Materials",
       "https://www.mongodb.com/languages/mern-stack-tutorial",
+      "https://www.youtube.com/watch?v=5PaUiPyBDJY&t=796s",
     ],
     ["https://dog.ceo/dog-api/"],
   ];
