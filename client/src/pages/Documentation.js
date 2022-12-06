@@ -16,7 +16,9 @@ export default function Documentation(props) {
     ["Filter by upcoming recency up to 4 events in sorted order"],
     ["Filter buttons (All, upcoming, past)", "sorted by date"],
     ["Show full details of events (distinct id path)"],
-    ["Filter batch of executes by year (and sorted by descending title)"],
+    [
+      "Filter batch of executes by year (and sorted by descending title). year list in dropdown are dynamic",
+    ],
     ["Table view of all events", "Add a new event (toggled)", "Delete event"],
     ["From edit, change desired fields (distinct id path)"],
   ];
