@@ -6,7 +6,7 @@ const Record = (props) => (
     <td>
       <Link
         className="btn btn-link"
-        to={`/event/${props.record._id}`}
+        to={`/events/${props.record._id}`}
         event={props.record}
       >
         {props.record.title}
