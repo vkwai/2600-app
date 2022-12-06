@@ -11,6 +11,7 @@ export default function Documentation(props) {
   const li = [
     [
       "Express rest api persisting to 2 mongodb collections (events (dynamic), executives (static))",
+      "Consumes public dog api (see sources)",
       "React front end with vanilla bootstrap",
     ],
     ["Filter by upcoming recency up to 4 events in sorted order"],
