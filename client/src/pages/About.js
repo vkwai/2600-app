@@ -28,7 +28,7 @@ export default function About(props) {
   const [year, setYear] = useState(new Date().getFullYear().toString());
 
   useEffect(() => {
-    fetch("http://localhost:5000/executives")
+    fetch("/executives")
       .then((response) => response.json())
       .then((data) => {
         setExecutives(data);

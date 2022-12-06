@@ -47,7 +47,7 @@ export default function Admin(props) {
   useEffect(() => {
     getImage();
     async function getData() {
-      const response = await fetch(`http://localhost:5000/events/`);
+      const response = await fetch(`/events/`);
 
       if (!response.ok) {
         const message = `An error occured: ${response.statusText}`;
@@ -59,7 +59,7 @@ export default function Admin(props) {
       setData(records);
     }
     // function getRecords() {
-    //   const response = fetch(`http://localhost:5000/events/`)
+    //   const response = fetch(`/events/`)
     //     .then((response) => {
     //       response.json();
     //     })
@@ -72,7 +72,7 @@ export default function Admin(props) {
   }, [data.length, isCreating]);
 
   function deleteRecord(id) {
-    fetch(`http://localhost:5000/${id}`, {
+    fetch(`/${id}`, {
       method: "DELETE",
     }).then(() => {
       const newRecords = data.filter((el) => el._id !== id);
@@ -116,7 +116,7 @@ export default function Admin(props) {
       form.image = image.message;
       const newEvent = { ...form };
 
-      fetch("http://localhost:5000/events/add", {
+      fetch("/events/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

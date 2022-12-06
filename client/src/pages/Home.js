@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Home(props) {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/events/`)
+    fetch(`/events/`)
       .then((response) => response.json())
       .then((data) => setEvents(data));
   }, [events.length]);

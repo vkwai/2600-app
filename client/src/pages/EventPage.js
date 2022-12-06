@@ -7,7 +7,7 @@ export default function EventPage(props) {
   const history = useHistory();
   useEffect(() => {
     const id = params.id.toString();
-    fetch(`http://localhost:5000/events/${id.toString()}`)
+    fetch(`/events/${id.toString()}`)
       .then((response) => response.json())
       .then((data) => setData(data));
   }, [params.id, history]);

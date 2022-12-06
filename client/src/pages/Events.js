@@ -4,7 +4,7 @@ import FilterButton from "../components/FilterButton";
 export default function Events() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/events/`)
+    fetch(`/events/`)
       .then((response) => response.json())
       .then((data) => setEvents(data));
   }, [events.length]);
