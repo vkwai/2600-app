@@ -45,7 +45,7 @@ export default function Footer() {
                   <h6 className="text-uppercase fw-bold mb-4">Media</h6>
                   <p>
                     <a
-                      href="https://github.com/langaracs"
+                      href="https://github.com/langaracpsc"
                       className="text-reset"
                     >
                       <i className="bi bi-github"></i>
